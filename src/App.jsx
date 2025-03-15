@@ -26,7 +26,7 @@ const Brands = React.lazy(() => import('./Component/Brands/Brands.jsx'));
 export default function App() {
 
   let routers = createBrowserRouter([
-    {path :'/home',element : <Layout></Layout> , children : [
+    {path :"",element : <Layout></Layout> , children : [
       {index : true , element : <ProtectedRoute><Home></Home></ProtectedRoute>},
       {path : 'home' , element : <ProtectedRoute><Home></Home></ProtectedRoute>},
       {path : 'cart' , element : <ProtectedRoute><Cart></Cart></ProtectedRoute>},
