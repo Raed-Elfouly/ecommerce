@@ -27,7 +27,7 @@ export default function App() {
 
   let routers = createBrowserRouter([
     {path :"",element : <Layout></Layout> , children : [
-      {index : true , element : <ProtectedRoute><Home></Home></ProtectedRoute>},
+      {index : 'home' , element : <ProtectedRoute><Home></Home></ProtectedRoute>},
       {path : 'home' , element : <ProtectedRoute><Home></Home></ProtectedRoute>},
       {path : 'cart' , element : <ProtectedRoute><Cart></Cart></ProtectedRoute>},
       {path : 'products' , element : <ProtectedRoute><Products></Products></ProtectedRoute>},
